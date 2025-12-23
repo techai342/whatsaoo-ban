@@ -181,8 +181,8 @@ Pakistan`
 
         {/* Form Sections */}
         <div className="p-6">
-          {/* Section 1 */}
-          <div className={`form-section space-y-6 ${currentSection !== 1 ? 'hidden-section' : ''}`}>
+          {/* Section 1 - Only show when currentSection === 1 */}
+          <div className={`form-section space-y-6 ${currentSection === 1 ? '' : 'hidden-section'}`}>
             <div className="space-y-4">
               <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest ml-1">Your Information</label>
 
@@ -238,8 +238,8 @@ Pakistan`
             </button>
           </div>
 
-          {/* Section 2 */}
-          <div className={`form-section hidden-section space-y-6 ${currentSection !== 2 ? 'hidden-section' : ''}`}>
+          {/* Section 2 - Only show when currentSection === 2 */}
+          <div className={`form-section space-y-6 ${currentSection === 2 ? '' : 'hidden-section'}`}>
             <div className="space-y-4">
               <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest ml-1 mb-4">Select Email Type</label>
 
@@ -321,8 +321,8 @@ Pakistan`
             </div>
           </div>
 
-          {/* Section 3 */}
-          <div className={`form-section hidden-section space-y-6 ${currentSection !== 3 ? 'hidden-section' : ''}`}>
+          {/* Section 3 - Only show when currentSection === 3 */}
+          <div className={`form-section space-y-6 ${currentSection === 3 ? '' : 'hidden-section'}`}>
             <div className="space-y-4">
               <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest ml-1 mb-2">Email Preview</label>
 
